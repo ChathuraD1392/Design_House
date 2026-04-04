@@ -1,4 +1,3 @@
-import { FaBrush } from 'react-icons/fa';
 import design_1 from '../assets/app_1.jpg';
 import design_2 from '../assets/app_2.jpg';
 
