@@ -1,10 +1,11 @@
 import Carousal from './components/Carousal';
+import WhyUs from './components/WhyUs';
 
 const Home = () => {
   return (
     <>
-      {/* <div className='w-[90wh] h-[90vh] bg-amber-200 '></div> */}
       <Carousal />
+      <WhyUs />
     </>
   );
 };

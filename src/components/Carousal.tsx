@@ -36,7 +36,7 @@ const Carousal = () => {
               <h2 className='text-8xl font-light mb-2 drop-shadow-lg font-oranienbaum'>
                 {slide.title}
               </h2>
-              <button className='btn border-0 bg-white/20 mt-6 font-light text-md tracking-wider hover:bg-slate-300/40'>
+              <button className='btn border-0 bg-white/20 mt-6 font-light text-md tracking-wider hover:bg-slate-300/40 pl-12 pr-12 pt-4 pb-4'>
                 More...
               </button>
             </div>

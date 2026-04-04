@@ -4,6 +4,7 @@ import About from '../About';
 import { Contact } from '../Contact';
 import Gallery from '../Gallery';
 import Layout from './Layout';
+import FAQ from '../FAQ';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
       { path: 'about', Component: About },
       { path: 'gallery', Component: Gallery },
       { path: 'contact', Component: Contact },
+      { path: 'faq', Component: FAQ },
     ],
   },
 ]);

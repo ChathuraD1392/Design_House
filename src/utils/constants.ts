@@ -8,6 +8,7 @@ export const links = [
   { id: 2, name: 'About', href: '/about' },
   { id: 3, name: 'Gallery', href: '/gallery' },
   { id: 4, name: 'Contact', href: '/contact' },
+  { id: 5, name: 'FAQ', href: '/faq' },
 ];
 
 export const footerLinks = [
