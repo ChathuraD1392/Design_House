@@ -9,3 +9,8 @@
   --font-saira: 'Saira', sans-serif;
   --color-primary: #3b82f6;
 }
+
+html {
+  scrollbar-color: #000 #6d6d6d;
+  scrollbar-width: thin;
+}
