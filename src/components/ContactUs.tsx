@@ -4,12 +4,7 @@ import { MdOutlineLocationOn } from 'react-icons/md';
 
 const ContactUs = () => {
   return (
-    <div
-      className='relative text-white min-h-screen flex items-center justify-center p-6 md:p-10 bg-cover bg-center bg-no-repeat'
-      style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/image3.jpg')`,
-      }}
-    >
+    <div className='relative text-white min-h-screen flex items-center justify-center p-6 md:p-10 bg-cover bg-black bg-center bg-no-repeat'>
       <div className='grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24 max-w-7xl w-full'>
         {/* LEFT SIDE: Form Container */}
 
@@ -49,7 +44,7 @@ const ContactUs = () => {
         </div>
 
         {/* RIGHT SIDE: Content */}
-        <div className=' font-light border border-white/10 p-8 md:p-12 rounded-sm'>
+        <div className=' font-light border border-white/30 p-8 md:p-12 rounded-sm'>
           <form className='space-y-6'>
             {/* Name Row */}
             <div className='flex flex-col md:flex-row gap-4'>
@@ -106,7 +101,7 @@ const ContactUs = () => {
 
             {/* Submit Button */}
             <div className='text-right'>
-              <button className='btn uppercase font-monserret border-0 bg-black mt-4 md:mt-6 font-bold md:text-md tracking-wider hover:bg-slate-300 hover:text-black px-8 md:px-12 py-3 md:pt-4 md:pb-4'>
+              <button className='btn uppercase font-monserret border border-slate-300 bg-black mt-4 md:mt-6 font-bold md:text-md tracking-wider hover:bg-slate-100 hover:text-black px-8 md:px-12 py-3 md:pt-4 md:pb-4'>
                 <IoMail />
                 Submit
               </button>

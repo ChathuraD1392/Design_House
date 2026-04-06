@@ -8,7 +8,7 @@ import { TbPoint } from 'react-icons/tb';
 
 const Footer = () => {
   return (
-    <footer className='bg-black text-gray-400 pt-16 pb-4 px-8 font-sans'>
+    <footer className='bg-black text-gray-400 pt-16 pb-4 px-8 font-sans border-t border-slate-800'>
       <div className='max-w-7xl mx-auto'>
         {/* Changed to 6-column grid for precise control */}
         <div className='grid grid-cols-1 md:grid-cols-6 gap-12 mb-10'>
