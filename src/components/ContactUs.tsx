@@ -1,6 +1,15 @@
+import { BsTelephone } from 'react-icons/bs';
+import { IoMail } from 'react-icons/io5';
+import { MdOutlineLocationOn } from 'react-icons/md';
+
 const ContactUs = () => {
   return (
-    <div className='bg-[#0a0a0a]/6  0 text-white min-h-screen flex items-center justify-center p-6 md:p-10'>
+    <div
+      className='relative text-white min-h-screen flex items-center justify-center p-6 md:p-10 bg-cover bg-center bg-no-repeat'
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/image3.jpg')`,
+      }}
+    >
       <div className='grid grid-cols-1 lg:grid-cols-2 gap-16 md:gap-24 max-w-7xl w-full'>
         {/* LEFT SIDE: Form Container */}
 
@@ -17,7 +26,8 @@ const ContactUs = () => {
           <div className='mt-16 lg:mt-0 space-y-12'>
             {/* Phone Info */}
             <div>
-              <p className='uppercase tracking-widest text-sm font-semibold mb-3'>
+              <p className='flex items-center gap-2 uppercase tracking-widest text-sm font-semibold mb-3'>
+                <BsTelephone />
                 Phone
               </p>
               <p className='text-gray-400 text-lg'>+94 77 240 1227</p>
@@ -25,7 +35,8 @@ const ContactUs = () => {
 
             {/* Address Info */}
             <div className='relative'>
-              <p className='uppercase tracking-widest text-sm font-semibold mb-3'>
+              <p className='flex items-center gap-2 uppercase tracking-widest text-sm font-semibold mb-3'>
+                <MdOutlineLocationOn />
                 Address
               </p>
               <p className='text-gray-400 text-lg'>
@@ -96,6 +107,7 @@ const ContactUs = () => {
             {/* Submit Button */}
             <div className='text-right'>
               <button className='btn uppercase font-monserret border-0 bg-black mt-4 md:mt-6 font-bold md:text-md tracking-wider hover:bg-slate-300 hover:text-black px-8 md:px-12 py-3 md:pt-4 md:pb-4'>
+                <IoMail />
                 Submit
               </button>
             </div>

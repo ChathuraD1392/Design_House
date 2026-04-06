@@ -1,9 +1,14 @@
+import { BsTelephone } from 'react-icons/bs';
+import { IoHomeOutline } from 'react-icons/io5';
+import { MdOutlineLocationOn, MdOutlineMailOutline } from 'react-icons/md';
 import logo from '../assets/logo.svg';
 import { footerLinks } from '../utils/constants';
+import { BiNews } from 'react-icons/bi';
+import { TbPoint } from 'react-icons/tb';
 
 const Footer = () => {
   return (
-    <footer className='bg-black text-gray-400 pt-16 pb-4 px-8 font-sans border-t border-zinc-600'>
+    <footer className='bg-black text-gray-400 pt-16 pb-4 px-8 font-sans'>
       <div className='max-w-7xl mx-auto'>
         {/* Changed to 6-column grid for precise control */}
         <div className='grid grid-cols-1 md:grid-cols-6 gap-12 mb-10'>
@@ -29,7 +34,8 @@ const Footer = () => {
 
           {/* 2. Company Links - Occupies 1 Column */}
           <div className='md:col-span-1 space-y-4'>
-            <h4 className='text-sm font-bold uppercase tracking-widest text-white mb-6'>
+            <h4 className='flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-white mb-6'>
+              <IoHomeOutline />
               Company
             </h4>
             <ul className='space-y-3 text-xs'>
@@ -37,8 +43,9 @@ const Footer = () => {
                 <li key={index}>
                   <a
                     href='#'
-                    className='hover:text-white transition uppercase text-slate-300'
+                    className='hover:text-white transition uppercase text-slate-300 flex items-center gap-2'
                   >
+                    <TbPoint />
                     {link.name}
                   </a>
                 </li>
@@ -50,7 +57,8 @@ const Footer = () => {
           <div className='md:col-span-1 space-y-4'>
             <ul className='space-y-3 text-xs text-slate-300'>
               <li className='mb-5'>
-                <h4 className='text-sm font-bold uppercase tracking-widest text-white'>
+                <h4 className='flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-white'>
+                  <MdOutlineMailOutline />
                   Email
                 </h4>
                 <span className='lowercase block text-slate-300 mt-1'>
@@ -58,7 +66,8 @@ const Footer = () => {
                 </span>
               </li>
               <li className='mt-4 mb-4'>
-                <h4 className='text-sm font-bold uppercase tracking-widest text-white'>
+                <h4 className='flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-white'>
+                  <MdOutlineLocationOn />
                   Address
                 </h4>
                 <span className='block ext-slate-300 mt-1'>
@@ -66,7 +75,8 @@ const Footer = () => {
                 </span>
               </li>
               <li className='mt-4 mb-4'>
-                <h4 className='text-sm font-bold uppercase tracking-widest text-white'>
+                <h4 className='flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-white'>
+                  <BsTelephone />
                   Contact
                 </h4>
                 <span className='block ext-slate-300 mt-1'>
@@ -78,7 +88,8 @@ const Footer = () => {
 
           {/* 4. Newsletter Section - Occupies 2 Columns */}
           <div className='md:col-span-2 space-y-4'>
-            <h4 className='text-sm font-bold uppercase tracking-widest text-white mb-6'>
+            <h4 className='flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-white mb-6'>
+              <BiNews />
               Join a Newsletter
             </h4>
             <p className='text-xs mb-4'>
