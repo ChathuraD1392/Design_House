@@ -42,7 +42,7 @@ const Footer = () => {
               {footerLinks.map((link, index) => (
                 <li key={index}>
                   <a
-                    href='#'
+                    href={link.href}
                     className='hover:text-white transition uppercase text-slate-300 flex items-center gap-2'
                   >
                     <TbPoint />
